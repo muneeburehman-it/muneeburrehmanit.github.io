@@ -1,156 +1,285 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Muneeb Ur Rehman | Network Engineer</title>
-    <meta name="description" content="Muneeb Ur Rehman - IT Graduate and Aspiring Network Engineer specializing in Cisco, GNS3, VLANs, OSPF, Active Directory, DHCP, DNS, and Network Security.">
-    <meta name="google-site-verification" content="u1j2rQSgrHW7EI5oKaVUbdG6S0GPd29IpqtCee-5JEs" />
-</head>
 
-<body>
+    <meta name="description" content="Muneeb Ur Rehman - IT Graduate and Aspiring Network Engineer specializing in Cisco, GNS3, VLANs, OSPF, Active Directory, DHCP, DNS, pfSense, FortiGate, and Network Security.">
 
-    <header>
-        <h1>Muneeb Ur Rehman</h1>
-        <h2>IT Graduate | Aspiring Network Engineer</h2>
+    <meta name="google-site-verification" content="u1j2rQSgrHW7EI5oKaVUbdG6S0GPd29IpqtCee-5JEs">
 
-        <p>
-            Cisco • GNS3 • VLANs • OSPF • Active Directory • DHCP • DNS • Network Security
-        </p>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
 
-        <p>
-            <a href="https://www.linkedin.com/in/muneeburrehmanit" target="_blank">LinkedIn</a>
-            |
-            <a href="https://github.com/muneeburehman-it" target="_blank">GitHub</a>
-        </p>
-    </header>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0b1120;
+            color: #e5e7eb;
+            line-height: 1.7;
+        }
 
-    <hr>
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
 
-    <section>
-        <h2>About Me</h2>
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
 
-        <p>
-            I am an IT graduate with a strong interest in networking,
-            IT infrastructure, and network security. I enjoy building
-            and troubleshooting practical network environments and
-            turning theoretical concepts into working solutions.
-        </p>
+        /* Navigation */
 
-        <p>
-            My hands-on experience includes Cisco networking, VLANs,
-            routing, OSPF, DHCP, DNS, Active Directory, pfSense,
-            FortiGate, and GNS3-based network simulation.
-        </p>
-    </section>
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(11, 17, 32, 0.95);
+            border-bottom: 1px solid #1e293b;
+            backdrop-filter: blur(10px);
+        }
 
-    <section>
-        <h2>Skills</h2>
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 0;
+        }
 
-        <ul>
-            <li>Computer Networking</li>
-            <li>Network Administration</li>
-            <li>Cisco Networking</li>
-            <li>Routing & Switching</li>
-            <li>VLANs</li>
-            <li>OSPF</li>
-            <li>DHCP & DNS</li>
-            <li>Active Directory</li>
-            <li>Network Security</li>
-            <li>GNS3</li>
-            <li>pfSense</li>
-            <li>FortiGate</li>
-            <li>TCP/IP & IP Addressing</li>
-        </ul>
-    </section>
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
 
-    <section>
-        <h2>Projects</h2>
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
 
-        <h3>Multi-Site Enterprise Network with VLANs & OSPF</h3>
+        .nav-links a {
+            color: #cbd5e1;
+            font-size: 14px;
+            transition: 0.3s;
+        }
 
-        <p>
-            Designed and configured a multi-site enterprise network
-            in GNS3 using Cisco routers and switches.
-        </p>
+        .nav-links a:hover {
+            color: #38bdf8;
+        }
 
-        <ul>
-            <li>Implemented departmental VLANs</li>
-            <li>Configured inter-VLAN routing</li>
-            <li>Configured OSPF dynamic routing</li>
-            <li>Implemented DHCP</li>
-            <li>Tested and troubleshot network connectivity</li>
-        </ul>
+        /* Hero */
 
-        <p>
-            <a href="https://github.com/muneeburehman-it/Multi-Site-Enterprise-OSPF" target="_blank">
-                View Project on GitHub
-            </a>
-        </p>
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            background:
+                radial-gradient(circle at 80% 20%, rgba(14, 165, 233, 0.16), transparent 30%),
+                radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.12), transparent 30%);
+        }
 
-        <h3>Active Directory, DHCP & DNS Lab</h3>
+        .hero-content {
+            max-width: 800px;
+        }
 
-        <p>
-            Designed and implemented a Windows Server enterprise
-            lab environment in GNS3.
-        </p>
+        .tag {
+            display: inline-block;
+            padding: 7px 14px;
+            border: 1px solid #1e88b7;
+            border-radius: 30px;
+            color: #38bdf8;
+            font-size: 13px;
+            margin-bottom: 20px;
+            background: rgba(56, 189, 248, 0.06);
+        }
 
-        <ul>
-            <li>Configured Active Directory Domain Services</li>
-            <li>Created the CORP.LOCAL domain</li>
-            <li>Configured DNS</li>
-            <li>Configured DHCP</li>
-            <li>Joined a Windows 10 client to the domain</li>
-            <li>Tested authentication and network connectivity</li>
-        </ul>
+        .hero h1 {
+            font-size: clamp(42px, 7vw, 72px);
+            line-height: 1.05;
+            margin-bottom: 18px;
+            color: #f8fafc;
+        }
 
-        <p>
-            <a href="https://github.com/muneeburehman-it/Active-Directory-DHCP-DNS" target="_blank">
-                View Project on GitHub
-            </a>
-        </p>
-    </section>
+        .hero h1 span {
+            color: #38bdf8;
+        }
 
-    <section>
-        <h2>Experience</h2>
+        .hero h2 {
+            font-size: 24px;
+            font-weight: normal;
+            color: #94a3b8;
+            margin-bottom: 20px;
+        }
 
-        <h3>Network Engineer — National Center for Physics</h3>
-        <p>Internship | Sep 2025 – Dec 2025</p>
+        .hero p {
+            max-width: 700px;
+            color: #cbd5e1;
+            font-size: 17px;
+            margin-bottom: 30px;
+        }
 
-        <p>
-            Assisted with network infrastructure, router and switch
-            configuration, LAN connectivity, network troubleshooting,
-            VLANs, routing, switching, network design, and structured
-            network cabling.
-        </p>
+        .buttons {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
 
-        <h3>Information Technology Administrator — Madina Educational Complex</h3>
-        <p>Full-time | Sep 2024 – Feb 2025</p>
+        .btn {
+            padding: 12px 22px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 14px;
+            transition: 0.3s;
+            border: 1px solid #334155;
+        }
 
-        <p>
-            Managed day-to-day IT operations, technical support,
-            computer systems, network connectivity, router and switch
-            configuration, firewall basics, troubleshooting, and IT
-            infrastructure maintenance.
-        </p>
-    </section>
+        .btn-primary {
+            background: #0284c7;
+            color: white;
+            border-color: #0284c7;
+        }
 
-    <section>
-        <h2>Education</h2>
+        .btn-primary:hover {
+            background: #0369a1;
+        }
 
-        <h3>BS Information Technology</h3>
-        <p>
-            Mirpur University of Science and Technology (MUST)
-        </p>
-    </section>
+        .btn-secondary {
+            background: transparent;
+            color: #cbd5e1;
+        }
 
-    <hr>
+        .btn-secondary:hover {
+            border-color: #38bdf8;
+            color: #38bdf8;
+        }
 
-    <footer>
-        <p>
-            © 2026 Muneeb Ur Rehman
-        </p>
-    </footer>
+        /* Sections */
 
-</body>
-</html>
+        section {
+            padding: 90px 0;
+            border-bottom: 1px solid #172033;
+        }
+
+        .section-title {
+            margin-bottom: 45px;
+        }
+
+        .section-title span {
+            color: #38bdf8;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .section-title h2 {
+            font-size: 36px;
+            color: #f8fafc;
+            margin-top: 8px;
+        }
+
+        .section-title p {
+            color: #94a3b8;
+            margin-top: 8px;
+        }
+
+        /* About */
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .about-card {
+            background: #111827;
+            border: 1px solid #1e293b;
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        .about-card p {
+            color: #cbd5e1;
+            margin-bottom: 18px;
+        }
+
+        /* Skills */
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .skill {
+            background: #111827;
+            border: 1px solid #1e293b;
+            padding: 18px;
+            border-radius: 10px;
+            color: #cbd5e1;
+            transition: 0.3s;
+        }
+
+        .skill:hover {
+            transform: translateY(-3px);
+            border-color: #0284c7;
+        }
+
+        .skill strong {
+            color: #38bdf8;
+        }
+
+        /* Projects */
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .project {
+            background: #111827;
+            border: 1px solid #1e293b;
+            border-radius: 12px;
+            padding: 30px;
+            transition: 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            border-color: #0284c7;
+        }
+
+        .project-number {
+            color: #38bdf8;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .project h3 {
+            color: #f8fafc;
+            margin: 10px 0 15px;
+            font-size: 21px;
+        }
+
+        .project p {
+            color: #94a3b8;
+            margin-bottom: 18px;
+        }
+
+        .project ul {
+            padding-left: 20px;
+            color: #cbd5e1;
+```
