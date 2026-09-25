@@ -1,285 +1,533 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Muneeb Ur Rehman | Network Engineer</title>
+```
+<title>Muneeb Ur Rehman | Network Engineer</title>
 
-    <meta name="description" content="Muneeb Ur Rehman - IT Graduate and Aspiring Network Engineer specializing in Cisco, GNS3, VLANs, OSPF, Active Directory, DHCP, DNS, pfSense, FortiGate, and Network Security.">
+<meta name="description" content="Muneeb Ur Rehman - IT Graduate and Aspiring Network Engineer specializing in Cisco, GNS3, VLANs, OSPF, Active Directory, DHCP, DNS, pfSense, FortiGate, and Network Security.">
 
-    <meta name="google-site-verification" content="u1j2rQSgrHW7EI5oKaVUbdG6S0GPd29IpqtCee-5JEs">
+<meta name="google-site-verification" content="u1j2rQSgrHW7EI5oKaVUbdG6S0GPd29IpqtCee-5JEs">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #0b1120;
+        color: #e5e7eb;
+        line-height: 1.7;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    nav {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background: rgba(11, 17, 32, 0.95);
+        border-bottom: 1px solid #1e293b;
+        backdrop-filter: blur(10px);
+    }
+
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 0;
+    }
+
+    .logo {
+        font-size: 20px;
+        font-weight: bold;
+        color: #38bdf8;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 25px;
+        list-style: none;
+    }
+
+    .nav-links a {
+        color: #cbd5e1;
+        font-size: 14px;
+        transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+        color: #38bdf8;
+    }
+
+    .hero {
+        min-height: 90vh;
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        background:
+            radial-gradient(circle at 80% 20%, rgba(14, 165, 233, 0.16), transparent 30%),
+            radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.12), transparent 30%);
+    }
+
+    .hero-content {
+        max-width: 800px;
+    }
+
+    .tag {
+        display: inline-block;
+        padding: 7px 14px;
+        border: 1px solid #1e88b7;
+        border-radius: 30px;
+        color: #38bdf8;
+        font-size: 13px;
+        margin-bottom: 20px;
+        background: rgba(56, 189, 248, 0.06);
+    }
+
+    .hero h1 {
+        font-size: clamp(42px, 7vw, 72px);
+        line-height: 1.05;
+        margin-bottom: 18px;
+        color: #f8fafc;
+    }
+
+    .hero h1 span {
+        color: #38bdf8;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+        font-weight: normal;
+        color: #94a3b8;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        max-width: 700px;
+        color: #cbd5e1;
+        font-size: 17px;
+        margin-bottom: 30px;
+    }
+
+    .buttons {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 12px 22px;
+        border-radius: 8px;
+        font-weight: bold;
+        font-size: 14px;
+        transition: 0.3s;
+        border: 1px solid #334155;
+    }
+
+    .btn-primary {
+        background: #0284c7;
+        color: white;
+        border-color: #0284c7;
+    }
+
+    .btn-primary:hover {
+        background: #0369a1;
+    }
+
+    .btn-secondary {
+        background: transparent;
+        color: #cbd5e1;
+    }
+
+    .btn-secondary:hover {
+        border-color: #38bdf8;
+        color: #38bdf8;
+    }
+
+    section {
+        padding: 90px 0;
+        border-bottom: 1px solid #172033;
+    }
+
+    .section-title {
+        margin-bottom: 45px;
+    }
+
+    .section-title span {
+        color: #38bdf8;
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    .section-title h2 {
+        font-size: 36px;
+        color: #f8fafc;
+        margin-top: 8px;
+    }
+
+    .section-title p {
+        color: #94a3b8;
+        margin-top: 8px;
+    }
+
+    .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .about-card {
+        background: #111827;
+        border: 1px solid #1e293b;
+        padding: 30px;
+        border-radius: 12px;
+    }
+
+    .about-card h3 {
+        color: #f8fafc;
+        margin-bottom: 15px;
+    }
+
+    .about-card p {
+        color: #cbd5e1;
+        margin-bottom: 18px;
+    }
+
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .skill {
+        background: #111827;
+        border: 1px solid #1e293b;
+        padding: 18px;
+        border-radius: 10px;
+        color: #cbd5e1;
+        transition: 0.3s;
+    }
+
+    .skill:hover {
+        transform: translateY(-3px);
+        border-color: #0284c7;
+    }
+
+    .skill strong {
+        color: #38bdf8;
+    }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .project {
+        background: #111827;
+        border: 1px solid #1e293b;
+        border-radius: 12px;
+        padding: 30px;
+        transition: 0.3s;
+    }
+
+    .project:hover {
+        transform: translateY(-5px);
+        border-color: #0284c7;
+    }
+
+    .project-number {
+        color: #38bdf8;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .project h3 {
+        color: #f8fafc;
+        margin: 10px 0 15px;
+        font-size: 21px;
+    }
+
+    .project p {
+        color: #94a3b8;
+        margin-bottom: 18px;
+    }
+
+    .project ul {
+        padding-left: 20px;
+        color: #cbd5e1;
+        margin-bottom: 22px;
+    }
+
+    .project li {
+        margin-bottom: 7px;
+    }
+
+    .project-link {
+        display: inline-block;
+        color: #38bdf8;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .project-link:hover {
+        text-decoration: underline;
+    }
+
+    .timeline {
+        display: grid;
+        gap: 25px;
+    }
+
+    .timeline-item {
+        background: #111827;
+        border: 1px solid #1e293b;
+        border-left: 4px solid #0284c7;
+        padding: 28px;
+        border-radius: 10px;
+    }
+
+    .timeline-item h3 {
+        color: #f8fafc;
+        margin-bottom: 5px;
+    }
+
+    .timeline-item .company {
+        color: #38bdf8;
+        font-weight: bold;
+        margin-bottom: 4px;
+    }
+
+    .timeline-item .date {
+        color: #64748b;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .timeline-item ul {
+        padding-left: 20px;
+        color: #cbd5e1;
+    }
+
+    .education-card {
+        background: #111827;
+        border: 1px solid #1e293b;
+        border-radius: 12px;
+        padding: 30px;
+    }
+
+    .education-card h3 {
+        color: #f8fafc;
+        margin-bottom: 5px;
+    }
+
+    .education-card .institution {
+        color: #38bdf8;
+        font-weight: bold;
+        margin-bottom: 12px;
+    }
+
+    .education-card p {
+        color: #cbd5e1;
+    }
+
+    .contact-box {
+        background: linear-gradient(
+            135deg,
+            rgba(2, 132, 199, 0.16),
+            rgba(15, 23, 42, 0.8)
+        );
+        border: 1px solid #1e293b;
+        border-radius: 14px;
+        padding: 45px;
+        text-align: center;
+    }
+
+    .contact-box h2 {
+        color: #f8fafc;
+        margin-bottom: 12px;
+    }
+
+    .contact-box p {
+        color: #94a3b8;
+        margin-bottom: 25px;
+    }
+
+    footer {
+        padding: 30px 0;
+        text-align: center;
+        color: #64748b;
+        font-size: 14px;
+    }
+
+    @media (max-width: 800px) {
+        .about-grid,
+        .projects-grid {
+            grid-template-columns: 1fr;
         }
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #0b1120;
-            color: #e5e7eb;
-            line-height: 1.7;
-        }
-
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1100px;
-            margin: auto;
-        }
-
-        /* Navigation */
-
-        nav {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            background: rgba(11, 17, 32, 0.95);
-            border-bottom: 1px solid #1e293b;
-            backdrop-filter: blur(10px);
+        .skills-grid {
+            grid-template-columns: repeat(2, 1fr);
         }
 
         .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 18px 0;
-        }
-
-        .logo {
-            font-size: 20px;
-            font-weight: bold;
-            color: #38bdf8;
+            flex-direction: column;
+            gap: 12px;
         }
 
         .nav-links {
-            display: flex;
-            gap: 25px;
-            list-style: none;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
         }
-
-        .nav-links a {
-            color: #cbd5e1;
-            font-size: 14px;
-            transition: 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: #38bdf8;
-        }
-
-        /* Hero */
 
         .hero {
-            min-height: 90vh;
-            display: flex;
-            align-items: center;
-            position: relative;
-            overflow: hidden;
-            background:
-                radial-gradient(circle at 80% 20%, rgba(14, 165, 233, 0.16), transparent 30%),
-                radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.12), transparent 30%);
+            min-height: 80vh;
         }
+    }
 
-        .hero-content {
-            max-width: 800px;
+    @media (max-width: 500px) {
+        .skills-grid {
+            grid-template-columns: 1fr;
         }
-
-        .tag {
-            display: inline-block;
-            padding: 7px 14px;
-            border: 1px solid #1e88b7;
-            border-radius: 30px;
-            color: #38bdf8;
-            font-size: 13px;
-            margin-bottom: 20px;
-            background: rgba(56, 189, 248, 0.06);
-        }
-
-        .hero h1 {
-            font-size: clamp(42px, 7vw, 72px);
-            line-height: 1.05;
-            margin-bottom: 18px;
-            color: #f8fafc;
-        }
-
-        .hero h1 span {
-            color: #38bdf8;
-        }
-
-        .hero h2 {
-            font-size: 24px;
-            font-weight: normal;
-            color: #94a3b8;
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            max-width: 700px;
-            color: #cbd5e1;
-            font-size: 17px;
-            margin-bottom: 30px;
-        }
-
-        .buttons {
-            display: flex;
-            gap: 14px;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            padding: 12px 22px;
-            border-radius: 8px;
-            font-weight: bold;
-            font-size: 14px;
-            transition: 0.3s;
-            border: 1px solid #334155;
-        }
-
-        .btn-primary {
-            background: #0284c7;
-            color: white;
-            border-color: #0284c7;
-        }
-
-        .btn-primary:hover {
-            background: #0369a1;
-        }
-
-        .btn-secondary {
-            background: transparent;
-            color: #cbd5e1;
-        }
-
-        .btn-secondary:hover {
-            border-color: #38bdf8;
-            color: #38bdf8;
-        }
-
-        /* Sections */
 
         section {
-            padding: 90px 0;
-            border-bottom: 1px solid #172033;
+            padding: 65px 0;
         }
 
-        .section-title {
-            margin-bottom: 45px;
+        .contact-box {
+            padding: 30px 20px;
         }
+    }
+</style>
+```
 
-        .section-title span {
-            color: #38bdf8;
-            font-size: 13px;
-            font-weight: bold;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
+</head>
 
-        .section-title h2 {
-            font-size: 36px;
-            color: #f8fafc;
-            margin-top: 8px;
-        }
+<body>
 
-        .section-title p {
-            color: #94a3b8;
-            margin-top: 8px;
-        }
+```
+<nav>
+    <div class="container nav-container">
+        <div class="logo">Muneeb Ur Rehman</div>
 
-        /* About */
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
 
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-        }
+<header class="hero">
+    <div class="container">
+        <div class="hero-content">
 
-        .about-card {
-            background: #111827;
-            border: 1px solid #1e293b;
-            padding: 30px;
-            border-radius: 12px;
-        }
+            <div class="tag">NETWORKING • IT INFRASTRUCTURE • SECURITY</div>
 
-        .about-card p {
-            color: #cbd5e1;
-            margin-bottom: 18px;
-        }
+            <h1>Muneeb Ur Rehman</h1>
 
-        /* Skills */
+            <h2>IT Graduate | Aspiring Network Engineer</h2>
 
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 15px;
-        }
+            <p>
+                I build, configure, troubleshoot, and document practical
+                enterprise networking environments using Cisco, GNS3,
+                VLANs, OSPF, Active Directory, DHCP, DNS, pfSense,
+                FortiGate, and network security technologies.
+            </p>
 
-        .skill {
-            background: #111827;
-            border: 1px solid #1e293b;
-            padding: 18px;
-            border-radius: 10px;
-            color: #cbd5e1;
-            transition: 0.3s;
-        }
+            <div class="buttons">
+                <a class="btn btn-primary"
+                   href="https://www.linkedin.com/in/muneeburrehmanit"
+                   target="_blank">
+                    LinkedIn
+                </a>
 
-        .skill:hover {
-            transform: translateY(-3px);
-            border-color: #0284c7;
-        }
+                <a class="btn btn-secondary"
+                   href="https://github.com/muneeburehman-it"
+                   target="_blank">
+                    GitHub
+                </a>
 
-        .skill strong {
-            color: #38bdf8;
-        }
+                <a class="btn btn-secondary"
+                   href="#projects">
+                    View Projects
+                </a>
+            </div>
 
-        /* Projects */
+        </div>
+    </div>
+</header>
 
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 25px;
-        }
+<section id="about">
+    <div class="container">
 
-        .project {
-            background: #111827;
-            border: 1px solid #1e293b;
-            border-radius: 12px;
-            padding: 30px;
-            transition: 0.3s;
-        }
+        <div class="section-title">
+            <span>01 — About</span>
+            <h2>About Me</h2>
+            <p>IT graduate focused on networking and infrastructure.</p>
+        </div>
 
-        .project:hover {
-            transform: translateY(-5px);
-            border-color: #0284c7;
-        }
+        <div class="about-grid">
 
-        .project-number {
-            color: #38bdf8;
-            font-size: 13px;
-            font-weight: bold;
-        }
+            <div class="about-card">
+                <h3>Who I Am</h3>
 
-        .project h3 {
-            color: #f8fafc;
-            margin: 10px 0 15px;
-            font-size: 21px;
-        }
+                <p>
+                    I am an IT graduate with a strong interest in networking,
+                    IT infrastructure, and network security. I enjoy turning
+                    theoretical concepts into practical working environments.
+                </p>
 
-        .project p {
-            color: #94a3b8;
-            margin-bottom: 18px;
-        }
+                <p>
+                    My approach is hands-on: design the topology, configure
+                    the devices, test connectivity, troubleshoot problems,
+                    and document the final implementation.
+                </p>
+            </div>
 
-        .project ul {
-            padding-left: 20px;
-            color: #cbd5e1;
-            </body>
-</html>
+            <div class="about-card">
+                <h3>What I Work With</h3>
+
+                <p>
+                    My practical learning includes Cisco networking,
+                    VLANs, routing, switching, OSPF, DHCP, DNS,
+                    Active Directory, firewalls, and network troubleshooting.
+                </p>
+
+                <p>
+                    I use GNS3 to build simulated enterprise environments
+                    and continuously expand my networking and infrastructure
+                    skills through practical projects.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="skills">
